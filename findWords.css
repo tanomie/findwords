@@ -1,0 +1,51 @@
+body {
+  color : white;
+  background-image: url("./img/bg_natural_ocean.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  padding: 1em;
+  margin:0;
+}
+div#yurayura {
+    position: relative;
+    padding : 1em;
+    width: 50%;
+    float: left;
+}
+img{
+  width: 100%;
+}
+div#fukidashi{
+ width :30%;
+ height: 30%;
+ display: flex;
+ top:10%;
+ left:50%;
+ position: absolute;
+}
+
+div#message {
+  background-color:blue;
+  padding: 1em;
+  position: absolute;
+  display: inline;
+  font-size: larger;
+}
+
+.anime {
+  animation-name: anime;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+@keyframes anime {
+  0%{
+  transform:translate(0,0px);
+  }
+  100%{
+    transform:translate(0,-15px);
+  }
+}
