@@ -8,30 +8,40 @@ body {
   padding: 1em;
   margin:0;
 }
-div#yurayura {
-    position: relative;
-    padding : 1em;
-    width: 50%;
-    float: left;
-}
 img{
   width: 100%;
+  }
+
+.grid {
+  display: grid;
+  grid-template:
+   "yurayura message" 50px
+   "yurayura result"  1fr /
+    1fr 1fr;
 }
-div#fukidashi{
- width :30%;
- height: 30%;
- display: flex;
- top:10%;
- left:50%;
- position: absolute;
+
+ div#urayura {
+  grid-area: yurayura;
 }
 
 div#message {
-  background-color:blue;
-  padding: 1em;
-  position: absolute;
-  display: inline;
+  grid-area: message;
   font-size: larger;
+  text-align: center;
+}
+.shellfish{
+  grid-area: result;
+  z-index: 10;
+}
+div#result{
+  padding: 5%;  
+  color: blue;
+  font-size: 3vmax;
+  grid-area:result;
+  z-index: 20;
+  justify-self: center;
+	align-self: center;
+  text-align: center;
 }
 
 .anime {
@@ -48,4 +58,5 @@ div#message {
   100%{
     transform:translate(0,-15px);
   }
+
 }
