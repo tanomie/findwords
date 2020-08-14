@@ -34,7 +34,7 @@ const answers = [
 
 /**
  * ゆらゆらをクリックした時間の（秒）からメッセージを返す関数
- * @pram{seconds} seconds  秒
+ * @pram{seconds} seconds  秒　30パターンにまとめる
  * @return{string} 海底から拾ってきたメッセージ
  */
 

@@ -10,16 +10,15 @@ body {
 }
 img{
   width: 100%;
-  }
+}
 
 .grid {
   display: grid;
   grid-template:
-   "yurayura message" 50px
-   "yurayura result"  1fr /
-    1fr 1fr;
+   "yurayura  message" 80px
+   "yurayura  result"  3fr /
+    1fr 1fr ;
 }
-
  div#urayura {
   grid-area: yurayura;
 }
@@ -34,8 +33,7 @@ div#message {
   z-index: 10;
 }
 div#result{
-  padding: 5%;  
-  color: blue;
+  background-color: #185ee067;
   font-size: 3vmax;
   grid-area:result;
   z-index: 20;
@@ -58,5 +56,4 @@ div#result{
   100%{
     transform:translate(0,-15px);
   }
-
 }
