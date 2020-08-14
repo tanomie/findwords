@@ -46,7 +46,7 @@ document.getElementById("yurayura").onclick = function () {
   };
   let result = answers[seconds];
   document.getElementById("message").innerHTML
-    = `拾ってきたよ〜何度でもクリックしてね〜`;
+    = `探してきたよ〜何度でもクリックしてね〜`;
   
   document.getElementById("test").src ="./img/kai.png";
   
