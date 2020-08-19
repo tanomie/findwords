@@ -3,16 +3,12 @@ body {
     Arial,
     "Hiragino Kaku Gothic ProN",
     "Hiragino Sans",
-    Meiryo,
     sans-serif;
   color : white;
   background-image: url("./img/bg_natural_ocean.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
-  background-size: cover;
-  padding: 1em;
-  margin:0;
 }
 img{
   width: 100%;
@@ -22,7 +18,7 @@ img{
   display: grid;
   grid-template:
    "yurayura  message" 50px
-   "yurayura  result"  3fr /
+   "yurayura  result"  2fr /
     1fr 1fr ;
 }
  div#urayura {
@@ -30,6 +26,7 @@ img{
 }
 
 div#message {
+  font-size: 2vmax;
   grid-area: message;
   text-align: center;
 }
@@ -38,7 +35,6 @@ div#message {
   z-index: 10;
 }
 div#result{
-  padding:3em;
   color:darkblue;
   font-size: 2vmax;
   grid-area:result;
