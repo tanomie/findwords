@@ -38,7 +38,7 @@ const answers = [
  * @return{string} 海底から拾ってきたメッセージ
  */
 
-document.getElementById("yurayura").onclick = function () {
+document.getElementById("yurayura").onclick = ()=> {
   let clickTime = new Date();
   let seconds = clickTime.getSeconds();
   if (seconds >= 30) {
